@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粵語網路課堂 Cantonese Online Tutorial</title>
+    <link href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/style/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/style/style.min.css" rel="stylesheet">
+    <link href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/style/css/font.css" rel="stylesheet" type="text/css">
+    <link href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/style/css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/style/css/app.css" rel="stylesheet" type="text/css">
+   
+    <style>
+        .course-tab-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+       
+        .course-tab {
+            padding: 15px 60px;
+            cursor: pointer;
+            border: 2px solid #0056b3;
+            background-color: white;
+            color: #0056b3;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-radius: 8px;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+       
+        .course-tab.active {
+            background-color: #0056b3;
+            color: white;
+        }
+        .icon img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+       
+        .course-section {
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pgJumbotron">
+        <header class="sticky-container" style="height: 54.375px;">
+            <div class="top-bar sticky pgTopBar is-anchored is-at-top" style="max-width: 1265px; margin-top: 0px; top: 0px;">
+                <nav>
+                    <div class="top-bar-right">
+                        <ul class="dropdown menu vertical medium-horizontal">
+                            <li><a href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/index.aspx">主頁</a></li>
+                            <li><a href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/romanization.aspx">語音知識</a></li>
+                            <li><a href="javascript:void(0);">粵語課程</a></li>
+                            <li><a href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/about.aspx">關於我們</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="grid-container grid-container-padded">
+            <div class="grid-x align-center-middle">
+                <div class="cell text-center">
+                    <div class="container">
+                        <h1>粵語網路課堂</h1>
+                        <p class="motto">
+                            粵語是漢語方言之一，通行於廣東省大部分地區。據專家統計，包括海外華人在內，用粵語溝通的人不少於七千萬人。粵語作為漢語方言，與普通話固然有著許多相同的地方。然而兩者在語音、辭彙和語法各方面都有不少差異。我們應當注意粵語與普通話的對應關係，找出其中的規律以便提高學習效率。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pgContainer grid-container">
+        <div class="grid-x align-center grid-padding-x grid-padding-y padding">
+            <div class="cell text-center">
+                <h2>粵語課程</h2>
+                <p>本章節分初級及中級的常用粵語內容。</p>
+               
+                <div class="course-tab-container">
+                    <button type="button" id="btnA" class="course-tab active">初級</button>
+                    <button type="button" id="btnB" class="course-tab">中級</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 初級內容區 -->
+    <div id="sectionA" class="course-section pgContainer shaded" style="display: block;">
+        <div class="grid-container">
+            <h2 class="text-center" style="margin-bottom: 30px;">初級課程</h2>
+            <div class="grid-x align-center grid-padding-x grid-padding-y">
+                <!-- 你的初級課程連結保持不變 -->
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b1.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_01.png" alt="見面"></div>
+                    <div class="h4">見面</div>
+                </a>
+                <!-- 其餘 9 個初級課程保持原樣... -->
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b2.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_02.png" alt="打電話"></div>
+                    <div class="h4">打電話</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b3.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_03.png" alt="購物"></div>
+                    <div class="h4">購物</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b4.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_04.png" alt="問路"></div>
+                    <div class="h4">問路</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b5.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_05.png" alt="用餐"></div>
+                    <div class="h4">用餐</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b6.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_06.png" alt="出行"></div>
+                    <div class="h4">出行</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b7.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_07.png" alt="景點"></div>
+                    <div class="h4">景點</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b8.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_08.png" alt="天氣"></div>
+                    <div class="h4">天氣</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b9.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_09.png" alt="娛樂"></div>
+                    <div class="h4">娛樂</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_b10.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonA_10.png" alt="求醫"></div>
+                    <div class="h4">求醫</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中級內容區 -->
+    <div id="sectionB" class="course-section pgContainer shaded" style="display: none;">
+        <div class="grid-container">
+            <h2 class="text-center" style="margin-bottom: 30px;">中級課程</h2>
+            <div class="grid-x align-center grid-padding-x grid-padding-y">
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_c1.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonB_01.png" alt="中大校園生活"></div>
+                    <div class="h4">中大校園生活</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_c2.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonB_02.png" alt="人際關係"></div>
+                    <div class="h4">人際關係</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_c3.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonB_03.png" alt="興趣愛好"></div>
+                    <div class="h4">興趣愛好</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_c4.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonB_04.png" alt="生活風情"></div>
+                    <div class="h4">生活風情</div>
+                </a>
+                <a class="cell small-12 medium-4 text-center" href="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/courseList_c5.aspx">
+                    <div class="icon"><img src="https://www.ilc.cuhk.edu.hk/workshop/chinese/cantonese/onlinetutorial/img/LessonB_05.png" alt="新聞書刊"></div>
+                    <div class="h4">新聞書刊</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pgFooter">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell small-12 medium-4 large-3">
+                    <strong>香港中文大學自學中心</strong>
+                    <div>
+                        (852) 3943 8733<br>
+                        <a href="mailto:ilc-counsel@cuhk.edu.hk">ilc-counsel@cuhk.edu.hk</a><br>
+                        聯合書院胡忠圖書館1樓
+                    </div>
+                    <strong>Copyright</strong>
+                    <div>版權所有 © 2026. 香港中文大學自學中心</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btnA = document.getElementById('btnA');
+            const btnB = document.getElementById('btnB');
+            const sectionA = document.getElementById('sectionA');
+            const sectionB = document.getElementById('sectionB');
+
+            function showLevel(level) {
+                if (level === 'A') {
+                    sectionA.style.display = 'block';
+                    sectionB.style.display = 'none';
+                    btnA.classList.add('active');
+                    btnB.classList.remove('active');
+                } else {
+                    sectionA.style.display = 'none';
+                    sectionB.style.display = 'block';
+                    btnA.classList.remove('active');
+                    btnB.classList.add('active');
+                }
+            }
+
+            // 綁定點擊事件
+            btnA.addEventListener('click', () => showLevel('A'));
+            btnB.addEventListener('click', () => showLevel('B'));
+        });
+    </script>
+</body>
+</html>
